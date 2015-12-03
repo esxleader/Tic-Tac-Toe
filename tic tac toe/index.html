@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1">
+
+    <title>Tic Tac Toe</title>
+
+    <style>
+      div.border {
+        max-height:500px;
+        border: 1px solid black;
+        padding: 8px;
+      }
+      div.empty {
+        padding: 5px;
+      }
+    </style>
+
+    <!-- Inline scripts are forbidden in Firefox OS apps (CSP restrictions),
+         so we use a script file. -->
+    <script src="app.js" defer></script>
+
+  </head>
+
+  <body bgcolor="#3DFFFF">
+    <!-- This code is in the public domain. Enjoy! -->
+
+    <div id="gamepart" align = "center" class="border">
+      <img id="title" src="image/title.png">
+      
+	   <img id="back" src="image/background.png" align = "center" style="position:relative; top:111px;">
+     <div style="position:relative; left:0px; top:-500px;">
+	   <table>
+       <img id="win_pic" src="image/0.png" align = "center" style="visibility:hidden; position:relative; top:341px;">
+       <td align = "center">
+         <button id="restart" onclick = "restart()" style="background:rgba(0,0,0,0); border:none;"><img src="image/restart.png"></button>
+       </td>
+       <td>
+       </td>
+       <td align = "center">
+         <h5 id="show_playing"></h5>
+       </td>
+       <tr>
+         <td><img src="image/restart.png" style="visibility:hidden;"></td>
+       <tr>
+	   <td align = "center">
+        <button id="a11" onclick = "a11()" style="background:rgba(0,0,0,0); border:none;"><img src="image/none.png"></button>
+       </td>
+      <td align = "center">
+        <button id="a12" onclick = "a12()" style="background:rgba(0,0,0,0); border:none;"><img src="image/none.png"></button>
+       </td>
+      <td align = "center">
+        <button id="a13" onclick = "a13()" style="background:rgba(0,0,0,0); border:none;"><img src="image/none.png"></button>
+       </td>
+	   <tr>
+      <td align = "center">
+        <button id="a21" onclick = "a21()" style="background:rgba(0,0,0,0); border:none;"><img src="image/none.png"></button>
+       </td>
+      <td align = "center">
+        <button id="a22" onclick = "a22()" style="background:rgba(0,0,0,0); border:none;"><img src="image/none.png"></button>
+       </td>
+      <td align = "center">
+        <button id="a23" onclick = "a23()" style="background:rgba(0,0,0,0); border:none;"><img src="image/none.png"></button>
+       </td>
+	   <tr>
+      <td align = "center">
+        <button id="a31" onclick = "a31()" style="background:rgba(0,0,0,0); border:none;"><img src="image/none.png"></button>
+       </td>
+      <td align = "center">
+        <button id="a32" onclick = "a32()" style="background:rgba(0,0,0,0); border:none;"><img src="image/none.png"></button>
+       </td>
+      <td align = "center">
+        <button id="a33" onclick = "a33()" style="background:rgba(0,0,0,0); border:none;"><img src="image/none.png"></button>
+       </td>
+	   </table>
+        </div>
+    </div>
+  </body>
+
+</html>
